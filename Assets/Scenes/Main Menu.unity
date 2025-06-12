@@ -220,7 +220,6 @@ GameObject:
   - component: {fileID: 333895181}
   - component: {fileID: 333895185}
   - component: {fileID: 333895188}
-  - component: {fileID: 333895186}
   - component: {fileID: 333895187}
   m_Layer: 0
   m_Name: Network Manager
@@ -290,20 +289,6 @@ MonoBehaviour:
   evaluationMethod: 0
   evaluationInterval: 3
   timeInterpolationGui: 0
---- !u!114 &333895186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333895180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
 --- !u!114 &333895187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +305,7 @@ MonoBehaviour:
   BroadcastAddress: 
   serverBroadcastListenPort: 47777
   ActiveDiscoveryInterval: 3
-  transport: {fileID: 0}
+  transport: {fileID: 333895188}
   OnServerFound:
     m_PersistentCalls:
       m_Calls:
