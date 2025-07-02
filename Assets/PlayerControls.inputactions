@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Position",
+                    "name": "Move",
                     "type": "Value",
                     "id": "7773f94f-ce79-4584-be2d-ddb3c53bfae9",
                     "expectedControlType": "Vector2",
@@ -54,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Position",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -65,7 +65,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Position",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
