@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Mirror;
+using UnityEngine.EventSystems;
 
-public class PlayerMovement : NetworkBehaviour
+public class PlayerMovement : NetworkBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     private bool _isDragging = false;
     private Camera _cam;
@@ -27,23 +28,14 @@ public class PlayerMovement : NetworkBehaviour
         }
     }
 
-    public void OnPress(InputAction.CallbackContext ctx)
+    public void OnPointerDown(PointerEventData eventData)
     {
-        if (ctx.performed)
-        {
-            Ray ray = _cam.ScreenPointToRay(_screenPos);
-            RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
+        _isDragging = true;
+    }
 
-            if (hit)
-            {
-                if (hit.transform == transform)
-                {
-                    _isDragging = true;
-                }
-            }
-        }
-        else
-            _isDragging = false;
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        _isDragging = false;
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
