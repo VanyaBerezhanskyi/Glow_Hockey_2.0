@@ -5,4 +5,4 @@
 https://github.com/user-attachments/assets/c6d2fcbf-8c68-46bb-ba92-e3b29f06d2df
 
 
-Сетевая версия мобильной игры Glow Hockey. Для нее был реализован фреймворк Mirror
+The online version of the mobile game Glow Hockey. The Mirror framework was implemented for it.
